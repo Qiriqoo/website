@@ -7,7 +7,7 @@ class ContactMailer < ApplicationMailer
     mail(
       to: admins.slice!(0),
       subject: "#{contact.username} nous à contacté!",
-      from: "#{contact.id}-#{contact.username.parameterize}@contact.dev-qiriqoo.herokuapp.com",
+      from: "#{contact.username.parameterize} <#{contact.id}@contact.dev-qiriqoo.herokuapp.com>",
       cc: admins
     )
   end

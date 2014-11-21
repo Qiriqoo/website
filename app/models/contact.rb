@@ -4,7 +4,7 @@ class Contact < ActiveRecord::Base
 
   validates :email, presence: true
 
-  validates :phone, length: { is: 10 }
+  validates :phone, length: { is: 10 }, allow_nil: true, allow_blank: true
   
   validates :text, presence: true
 
