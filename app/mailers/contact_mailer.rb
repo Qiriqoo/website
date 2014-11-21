@@ -1,11 +1,13 @@
 class ContactMailer < ApplicationMailer
 
   def warn_all_admins contact
+    admins = @@admins
+    
     @contact = contact
-    admins = ApplicationMailer.admins
     mail(
       to: admins.slice!(0),
       subject: "#{contact.username} nous à contacté!",
+      from: "#{contact.id}-#{contact.username.parameterize}@qiriqoo.fr",
       cc: admins
     )
   end

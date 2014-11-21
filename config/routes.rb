@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
 
+  root 'contacts#index'
+
   resources :contacts
 
-  root 'contacts#index'
+  resource :inbox, controller: 'inbox', only: [:show, :create]
+
 end
