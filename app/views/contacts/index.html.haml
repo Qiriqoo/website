@@ -1,0 +1,24 @@
+= form_for @contact, method: :post do |f|
+
+  = label_tag :username, 'Nom et prénom'
+  = f.text_field :username
+  - if @contact.errors[:username]
+    = @contact.errors[:username][0]
+    %br
+  = label_tag :phone, 'Téléphone'
+  = f.phone_field :phone
+  - if @contact.errors[:phone]
+    = @contact.errors[:phone][0]
+    %br
+  = label_tag :email, 'Email'
+  = f.email_field :email
+  - if @contact.errors[:email]
+    = @contact.errors[:email][0]
+    %br
+  = label_tag :text, 'Description'
+  = f.text_area :text
+  - if @contact.errors[:text]
+    = @contact.errors[:text][0]
+    %br
+
+  = f.submit 'Envoyer'
