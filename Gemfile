@@ -20,7 +20,10 @@ gem 'jquery-rails'
 gem 'jbuilder', '>= 2.0'
 
 
+
+
 group :development, :test do
+  gem 'rspec-rails', '~> 3.0'
   gem 'bullet'
   gem "better_errors"
 end
