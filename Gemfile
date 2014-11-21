@@ -5,6 +5,8 @@ gem 'pg'
 gem 'unicorn'
 gem 'rails_12factor', group: :production
 
+gem 'mandrill-rails'
+
 
 # CSS
 gem 'bootstrap-sass', '~> 3.1.1'
