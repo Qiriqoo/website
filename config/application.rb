@@ -25,8 +25,8 @@ module Website
       address: 'smtp.mandrillapp.com',
       port: 587,
       domain: 'qiriqoo.fr',
-      user_name: Rails.application.secrets.mandrill_username,
-      password: Rails.application.secrets.mandrill_key,
+      user_name: ENV['MANDRILL_USERNAME'] || Rails.application.secrets.mandrill_username,
+      password: ENV['MANDRILL_APIKEY'] || Rails.application.secrets.mandrill_key,
       authentication: 'login',
       enable_starttls_auto: true
     }
