@@ -7,7 +7,7 @@ class ContactMailer < ApplicationMailer
     mail(
       to: admins.slice!(0),
       subject: "#{contact.username} nous à contacté!",
-      from: "#{contact.id}-#{contact.username.parameterize}@qiriqoo.fr",
+      from: "#{contact.id}-#{contact.username.parameterize}@contact.dev-qiriqoo.herokuapp.com",
       cc: admins
     )
   end
@@ -17,6 +17,14 @@ class ContactMailer < ApplicationMailer
     mail(
       to: contact.email,
       subject: 'Votre demande à bien été pris en compte'
+    )
+  end
+
+  def response response
+    @response = response
+    mail(
+      to: response.email,
+      subject: 'Réponse à votre demande'
     )
   end
 end
