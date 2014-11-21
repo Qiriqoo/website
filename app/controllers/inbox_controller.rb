@@ -4,10 +4,9 @@ class InboxController < ApplicationController
   def handle_inbound(event_payload)
     response = Response.new
     payload = event_payload['msg']
-    raise event_payload.inspect
-    ## Find contact
-    ## Response email = contact email
-    ## Response text = email text
-    ## Create response
+
+    response.email = payload['email']
+    response.text = payload['html']
+    response.save!
   end
 end

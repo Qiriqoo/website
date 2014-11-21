@@ -1,7 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe Contact, type: :model, focus: true do
-
+RSpec.describe Contact, type: :model do
 
   describe 'when creates' do
     let(:contact_params) do
