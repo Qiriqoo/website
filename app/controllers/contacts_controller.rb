@@ -6,11 +6,24 @@ class ContactsController < ApplicationController
 
   def create
     @contact = Contact.new(contact_params)
-    if @contact.save
-      redirect_to root_path, notice: 'Cool'
-    else
-      render :index
+
+    respond_to do |format|
+
+      if @contact.save
+        format.html do
+          redirect_to root_path, notice: 'Cool'
+        end
+        format.js
+      else
+        format.html do
+          redirect_to root_path, nottice: 'errors in form'
+        end
+        format.js do
+          @errors = @contact.errors.messages
+        end
+      end
     end
+
   end
 
   private
