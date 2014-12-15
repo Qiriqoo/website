@@ -9,4 +9,7 @@ $ ->
 			scrollTop: targetBlockTop.position().top
 		, 600, 'linear'
 
-
+  $('#travail').hover ->
+    $('#travail-description').animate
+      top: "-20px",
+       '1000'
