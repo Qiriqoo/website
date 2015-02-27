@@ -14,4 +14,5 @@
 //= require jquery_ujs
 //= require bootstrap/collapse
 //= require bootstrap/scrollspy
+//= require slick.min
 //= require_tree .

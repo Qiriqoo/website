@@ -1,210 +1,270 @@
 body
-	position: relative
+  position: relative
 .logoqiriqoo
-	width: 200px
-	height: 50px
-	margin-top: -15px
+  width: 200px
+  height: 50px
+  margin-top: -15px
 .all-title
-	text-align: center
+  text-align: center
+.first-title
+  font-size: 55px !important
+  line-height: 22px
+.second-title
+  font-size: 45px !important
+  
 h1
-	padding: 10px 0 0 0
+  padding: 10px 0 0 0
 h2
-	padding: 10px 0
+  padding: 10px 0
 .navbar
-	margin-bottom: 0
-	border-radius: 0
-	padding-right: 15px
+  margin-bottom: 0
+  border-radius: 0
+  padding-right: 15px
+  background-color: #FFFFFF
+.navbar-nav
+  li a
+    color: black !important
+    font-weight: bold
+    &:hover
+      color: #ad0f06 !important
+
+  .active a
+    background-color: transparent !important
+    color: #ad0f06 !important
+  
+
 .block
-	padding: 25px 15px
+  padding: 15px 15px
 #nos-services,
 #a-propos,
 #nos-technos,
 #lequipe
-	padding: 25px 0
-	position: relative
+  padding: 25px 0
+  position: relative
 #travail-description,
 #transp,
 #work,
-#comm,
-#ruby-text,
-#rails-text,
-#angular-text,
-#postgre-text
-	position: absolute
-	width: 100%
-	height: 100%
-	opacity: 0
-	color: white
-	background-color: rgba(35,20,35,.9)
-	-webkit-transition: opacity .30s ease-in-out
-	-moz-transition: opacity .30s ease-in-out
+#comm
+  position: absolute
+  width: 100%
+  height: 100%
+  opacity: 0
+  color: white
+  background-color: rgba(35,20,35,.9)
+  -webkit-transition: opacity .30s ease-in-out
+  -moz-transition: opacity .30s ease-in-out
 
 .animate-block
-	position: absolute
-	top: 400px
-	left: 0
-	-webkit-transition: top .8s ease-in-out
-	-moz-transition: top .8s ease-in-out
+  position: absolute
+  top: 400px
+  left: 0
+  -webkit-transition: top .8s ease-in-out
+  -moz-transition: top .8s ease-in-out
+  img
+    width: 300px
+    height: 150px
+    margin: auto
+
+  p
+    font-size: 18px
+    text-align: justify
+    padding: 5px 10px
 
 #about
-	width: 1px
-	height: 1px
-	position: absolute
-	top: 0
+  width: 1px
+  height: 1px
+  position: absolute
+  top: 0
 #acceuil
-	text-align: center
-	min-height: 800px
-	background-image: url('polygon.jpg')
-	padding-top: 150px
-	.accueil-title,
-	.accueil-image
-		color: white
-		padding-top: 25px
-		padding-bottom: 25px
-	.second-title
-		margin-top: 0px
-	.btn-lequipe
-		background-color: #ad0f06
-		color: white
-		border-color: #ad0f06
-		font-size: 20px
-	.btn-contact
-		border: 2px solid #ad0f06
-		border-color: #ad0f06
-		background-color: black
-		color: white
-		font-size: 20px
+  text-align: center
+  min-height: 650px
+  background-image: url('polygon.jpg')
+  padding-top: 150px
+  .accueil-title,
+  .accueil-image
+    color: white
+    padding-top: 25px
+    padding-bottom: 25px
+  .first-title
+  .second-title
+    margin-top: 0px
+  .acceuil-text
+    font-size: 18px
+    text-align: justify
+    padding: 0 100px
+  .btn-lequipe
+    background-color: #ad0f06
+    color: white
+    border-color: #ad0f06
+    font-size: 20px
+  .btn-contact
+    border: 2px solid #ad0f06
+    border-color: #ad0f06
+    background-color: black
+    color: white
+    font-size: 20px
+    margin-left: 10px
 
 
 #nos-services
-	background-color: #e8e8e8
-	text-align: center
-	img
-		width: 150px
-		height: 150px
-		margin: auto
-		display: block	
+  background-color: #e8e8e8
+  text-align: center
+  img
+    width: 150px
+    height: 150px
+    margin: auto
+    display: block  
+  .service-text
+    text-align: left
 
 #a-propos
-	color: white
-	background: #5d2026
-	text-align: center
-	#travail,
-	#Workflow,
-	#transparence,
-	#communication
-		min-height: 400px
-		position: relative
-		overflow: hidden	
+  color: black
+  background: white
+  text-align: center
 
-	#travail
-		background: url('Responsive-design.jpg')
-		background-position: center
-		&:hover
-			#travail-description
-				opacity: 1
-			.animate-block
-				top: 0
-	#Workflow
-		background: url('Responsive-design.jpg')
-		background-position: center
-		&:hover 
-			#work
-				opacity: 1
-			.animate-block
-				top: 0
+  #travail
+    background: url('qcm2.png')
+    &:hover
+      #travail-description
+        opacity: 1
+        top: 0
+      .animate-block
+        top: 0
+  #Workflow
+    background: url('guepard.png')
+    &:hover 
+      #work
+        opacity: 1
+        top: 0
+      .animate-block
+        top: 0
 
-	#transparence
-		background: url('Responsive-design.jpg')
-		background-position: center
-		&:hover 
-			#transp
-				opacity: 1
-			.animate-block
-				top: 0
-	#communication
-		background: url('Responsive-design.jpg')
-		background-position: center
+  #transparence
+    background: url('loupe.png')
+    &:hover 
+      #transp
+        opacity: 1
+        top: 0
+      .animate-block
+        top: 0
+  #communication
+    background: url('casque-micro.png')
+    &:hover
+      #comm
+        opacity: 1
+        top: 0
+      .animate-block
+        top: 0
+  #travail,
+  #Workflow,
+  #transparence,
+  #communication
+    min-height: 400px
+    position: relative
+    overflow: hidden
+    background-position: center center
+    background-size: cover
+    background-color: #e8e8e8
+    .titles-bloc
+      z-index: 1
+      min-height: 400px
+      .top-title
+        font-size: 25px
+        font-weight: bold
+        padding: 15px 15px
 
-		&:hover
-			#comm
-				opacity: 1
-			.animate-block
-				top: 0
+      .bottom-title
+        padding-top: 275px
+        font-size: 25px
+
 
 #nos-technos
-	background: #5d2026
-	text-align: center
-	color: white
-	min-height: 350px
-	#ruby-block,
-	#rails-block,
-	#angular-block,
-	#postgre-block
-		position: relative
-		width: 100%
-		min-height: 400px
-		display: block
-	#ruby-block
-		background: url('ruby-logo.png')
-		background-size: cover
-		background-repeat: no-repeat
-		background-position: center
+  text-align: center
+  color: black
+  min-height: 350px
+  .slick-block
+    padding-top: 20px
 
-		&:hover
-			#ruby-text
-				opacity: 1
-			.animate-block
-				top: 0
-	#rails-block
-		background: url('Ruby_on_Rails.png')
-		background-size: cover		
-		background-repeat: no-repeat
-		background-position: center
+  .technos-bloc
+    max-width: 300px 
+    min-height: 300px
+    border: solid #C1001E 3px
+    -moz-border-radius: 50%
+    -webkit-border-radius: 50%
+    border-radius: 50%
+    overflow: hidden
+    position: relative
+    margin: 0 auto
+    margin-bottom: 20px
+    img
+      position: relative
+      top: 20px
+      min-height: 230px
+      max-width: 200px
+      margin: auto
+      border: 0
+  .desc-bloc
+    height: 300px
+    h2
+      text-align: left
+    h3
+      text-align: left
+    p
+      text-align: left
+      font-size: 20px
 
-		&:hover
-			#rails-text
-				opacity: 1
-			.animate-block
-				top: 0
-	#angular-block
-		background: url('angularjs-logo.png')
-		background-size: cover		
-		background-repeat: no-repeat
-		background-position: center
 
-		&:hover
-			#angular-text
-				opacity: 1
-			.animate-block
-				top: 0
-	#postgre-block
-		background: url('postgre.png')
-		background-size: cover		
-		background-repeat: no-repeat
-		background-position: center
-		&:hover
-			#postgre-text
-				opacity: 1
-			.animate-block
-				top: 0
 
 #lequipe
-	background: #e8e8e8
-	text-align: center
-	.masque-size
-		width: 250px
-		height: 250px
-		margin: auto
-		display: block
-#contact-us	
-	.contact-form
-		margin-top: 40px
+  background: #e8e8e8
+  text-align: center
+  .souley-profile
+    background: url('souley-masque.jpg')
+    -webkit-transition: all 1s ease
+    -moz-transition: all 1s ease
+    -ms-transition: all 1s ease
+    -o-transition: all 1s ease
+    transition: all 1s ease
+    &:hover
+      background: url('souleymane-diallo.jpg')
+      width: 250px
+      height: 250px
+      margin: auto
+      display: block
+      background-position: center center
+      background-size: cover
+      -webkit-transition: all 3s ease
+      -moz-transition: all 3s ease
+      -ms-transition: all 3s ease
+      -o-transition: all 3s ease
+      transition: all 3s ease
+
+  .alex-profile
+    background: url('masque-maure.jpg')
+    background-position: center top
+    &:hover
+      background: orange
+  .manu-profile
+    background: black
+    &:hover
+      background: yellow
+  .masque-size
+    width: 250px
+    height: 250px
+    margin: auto
+    display: block
+    background-position: center center
+    background-size: cover
+#contact-us
+  background-color: #e8e8e8
+  .contact-form
+    margin-top: 40px
 .page
-	margin-top: 20px
+  margin-top: 20px
 
 #footer
-	background: #5d2026
-	min-height: 100px
+  background-image: url('polygon.jpg')
+  color: white
+  min-height: 50px
 
 

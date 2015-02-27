@@ -1,111 +1,121 @@
 #acceuil.col-md-12.col-sm-12.col-xs-12
-  .col-md-offset-2.col-md-4.accueil-title.col-sm-12.col-xs-12
-    %h1.first-title
+  .col-md-offset-3.col-md-6.accueil-title.col-sm-12.col-xs-12
+    .first-title
       Transformez vos idées
-    %h2.second-title
+    .second-title
       en application web
     %p.acceuil-text
-      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat,  vel illum dolore eu feugi
+      Qiriqoo est une agence web basée à paris. Nous concevons des applications web responsives et élégantes. Nous utilisons des technologies Open Soure comme Ruby on rails, AngularJs, PostgreSql qui nous permettent de fournir des applications de qualitées, performantes et evolutives.
     .accueil-buttons
       = link_to '#lequipe' do
         %button.btn.btn-default.btn-lequipe
           Notre équipe
-      = link_to '#contact' do
+      = link_to '#contact-us' do
         %button.btn.btn-default.btn-contact
           Contactez nous
-  .col-md-4.accueil-image.col-sm-12.col-xs-12
-    = image_tag "Responsive-design.jpg", class: 'img-responsive'
-
+  
 #nos-services.col-md-12.col-sm-12.col-xs-12
   %h1.all-title
     Nos Services
   .col-md-2.col-sm-12.col-xs-12.col-md-offset-1.block
-    = image_tag 'pencil.png', class: 'img-circle img-responsive'
+    = image_tag 'conception2.jpg', class: 'img-circle img-responsive'
     %h3.all-title
       Conception
     %p.service-text
-      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex 
+      Afin de garantir un projet conforme à l'attente du client .nous effectuons au préalable des entretiens régulier pour nous accorder sur les fonctionnalités et le contenu de votre application. cette planification est la clé pour le succès de notre collaboration .
   .col-md-2.col-sm-12.col-xs-12.block
-    = image_tag 'icon_repairs.jpg', class: 'img-circle img-responsive'
+    = image_tag 'design2.jpg', class: 'img-circle img-responsive'
     %h3.all-title
-      UX design
+      UX & design
     %p.service-text 
-      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex 
+      Nous concevons des interfaces utilisateur pour le web, tablette et mobile. Nous définissons avec précision les éléments de l'application et la position de chaque fonctionnalité avec une navigation fluide et intuitive. Ainsi nos designers élaboreront le design directement relié à votre image de marque.
   .col-md-2.col-sm-12.col-xs-12.block
-    = image_tag 'pencil.png', class: 'img-circle img-responsive'
+    = image_tag 'developpement2.jpg', class: 'img-circle img-responsive'
     %h3.all-title
-      DEVELOPPEMENT
+      Développement
     %p.service-text
-      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex 
+      Nous développons nos applications selon la méthode agile. Le développement itératif nous permet d'être transparent et fidèle à notre feuille de route. Nous utilisons des technologies Open Soure comme Ruby on rails, AngularJs, PostgreSql qui nous permettent de fournir des applications de qualitées à des prix attractifs. 
   .col-md-2.col-sm-12.col-xs-12.block
-    = image_tag 'system-icon.png', class: 'img-circle img-responsive'
+    = image_tag 'e-commerce2.jpg', class: 'img-circle img-responsive'
     %h3.all-title
       E-Commerce
     %p.service-text
-      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex 
-
+      Nous concevons des sites e-commerce avec la solution open source Spree basée sur le Framework Ruby on rails. Spree est plus légère que la solution e-commerce en Php. Nous fournissons des solutions e-commerce complètes et conviviales adaptés à vos besoins spécifiques. Notre objectif est de crée une agréable boutique qui vous fera gagner la fidélité de vos clients.
   .col-md-2.col-sm-12.col-xs-12.block
-    = image_tag 'pencil.png', class: 'img-circle img-responsive'
+    = image_tag 'ebergement2.jpg', class: 'img-circle img-responsive'
     %h3.all-title
-      HOSTING & MAINTENANCE
+      Hébergement
     %p.service-text
-      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex 
-
+      Pour pérenniser notre collaboration, nous proposons une offre d'hébergement proactif continue et de l'assistance technique pour veiller au bon fonctionnement de tout ce que nous construisons. Nous utilisons les plates-formes les plus innovantes et sécurisées du marché comme AWS Heroku Ninefold pour vous proposer un hébergement en fonction de votre application. 
 #a-propos.col-md-12.col-xs-12.col-sm-12
   %h1.all-title
     A propos
   .col-md-offset-1.col-md-5.col-xs-12.col-sm-12.block
-    %h2
-      Qualité de travail
     #travail
+      .titles-bloc
+        .top-title
+          Qualité de travail
+        .bottom-title
+          Test et Intégration continue
       #travail-description
         .animate-block
+          = image_tag 'qcm2.png', class: 'img-circle img-responsive'
           %p
-            Afin d'assurer une durabilité pour nos projets nous régissons notre développement par des tests manuels et automatiques. chaque nouvelle fonctionnalité sera, en premie r lieu,validé par l'ensemble de l'équipe technique. Puis sera dans un second temps soumise à toute une batterie de tests unitaires grâce à un service d'intégration continue. D'autres services comme Codeclimate, nous permettent d'assurer un projet performant solvable
+            Afin d'assurer une durabilité pour nos projets nous régissons notre développement par des tests manuels et automatiques. chaque nouvelle fonctionnalité sera, en premier lieu,validé par l'ensemble de l'équipe technique. Puis sera dans un second temps soumise à toute une batterie de tests unitaires grâce à un service d'intégration continue. D'autres services comme Codeclimate, nous permettent d'assurer un projet performant solvable
   .col-md-5.col-xs-12.col-sm-12.block
-    %h2
-      Workflow
     #Workflow
+      .titles-bloc
+        .top-title
+          Méthode de travail
+        .bottom-title
+          Nous sommes agiles
       #work
         .animate-block
+          = image_tag 'guepard.png', class: 'img-circle img-responsive'
           %p
             Notre méthode de travail repose sur les principes des méthodes agiles.
             Lorsque un projet nous parvient, nous travaillons tout d’abord sur l’idée afin d’en sortir une estimation de temps et de budget nécessaire à la réalisation du projet. Nos développeurs délivrent ensuite les différentes fonctionnalités les une après les autres. Cela permet de réellement voir l’avancé d’un projet, et lui donne une liberté sur son évolution. Les nouvelles demandes et modifications de fonctionnalités déjà présentes sont ainsi beaucoup plus simple à intégrer au processus de travail. 
 
 
   .col-md-offset-1.col-md-5.col-xs-12.col-sm-12.block
-    %h2         
-      Transparence
     #transparence
+      .titles-bloc
+        .top-title
+          Transparence        
+        .bottom-title
+          Suivez votre projet en temps réel      
       #transp
         .animate-block
+          = image_tag 'loupe.png', class: 'img-circle img-responsive'
           %p
             Pour permettre une collaboration saine, nous mettons à disposition de nos clients un accès à notre gestionnaire de projet, Trello.
             Il sera en permanence mis à jour pour permettre une vison claire et précise de l’avancé du projet, du temps restant estimé et du temps passé sur chaque fonctionnalité. Afin que le client soit toujours au plus près de l’avancé de son projet, un serveur de développement pourra également être mis en place afin de le tester soit-même. 
 
   .col-md-5.col-xs-12.col-sm-12.block
-    %h2
-      Communication
     #communication
+      .titles-bloc
+        .top-title
+          Soutien
+        .bottom-title
+          30 jours de garantie sur tous nos travaux
       #comm
         .animate-block
+          = image_tag 'casque-micro.png', class: 'img-circle img-responsive'
           %p
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad mini m veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugi
+            Pour vous permettre de vous consacrer exclusivement à votre business, nous offrons une garantie de 30 jours sur tous nos travaux. Notre équipe est à votre disposition pour vous assister et vous guider dans vos problématiques d'utilisation et d'administration. Quotidiennement nous veillons sur votre application et nous vérifions la performance et la disponibilité de vos ressources. Nous planifions vos besoins futurs en regard de ce qui en est fait de votre application ainsi que vos besoins de croissance et d'optimisation.
 
 
-#lequipe.col-md-12.col-xs-12.col-sm-12
-  .block
-    %h1.all-title
-      L'équipe
-    %p.masquetext
-      lemasqueblabnlalnalnal
-      annallanandaodhna
-      addbaobdoaoadbo
+#lequipe.col-md-12.col-xs-12.col-sm-12.block
+  %h1.all-title
+    L'équipe
+  %p.masquetext
+    lemasqueblabnlalnalnal
+    annallanandaodhna
+    addbaobdoaoadbo
   .col-md-4.col-xs-12.col-sm-12.block
-    .img-profile
-      = image_tag 'souley-masque.jpg', class: 'img-circle img-responsive masque-size'
+    .souley-profile.img-circle.img-responsive.masque-size
     %h2.all-title
-      souleymane le ....
+      souleymane Diallo
     .description
       %p
         Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
@@ -124,10 +134,9 @@
           %span S
 
   .col-md-4.col-xs-12.col-sm-12.block
-    .img-profile
-      = image_tag 'souley-masque.jpg', class: 'img-circle img-responsive masque-size'
+    .alex-profile.img-circle.img-responsive.masque-size
     %h2.all-title
-      alexander le maure
+      alexander Ktifa
     .description
       Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
     .links.btn-group
@@ -145,10 +154,9 @@
           %span S
 
   .col-md-4.col-xs-12.col-sm-12.block
-    .img-profile
-      = image_tag 'souley-masque.jpg', class: 'img-circle img-responsive masque-size'
+    .manu-profile.img-circle.img-responsive.masque-size
     %h2.all-title
-      emannuelle dam van
+      Designer man
     .description
       Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
     .links.btn-group
@@ -168,42 +176,86 @@
 #nos-technos.col-md-12.col-xs-12.col-sm-12
   %h1.all-title
     Nos technos
-  .col-md-10.col-xs-12.col-sm-12.col-md-offset-1
-    .col-md-12.col-xs-12.col-sm-12
-      .col-md-3.col-xs-12.col-sm-12.block
-        %h2.all-title
-          Ruby
-        #ruby-block.img-rounded
-          #ruby-text
-            .animate-block
-              %p
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugi
+    .col-md-10.col-xs-12.col-sm-12.col-md-offset-1
+      .slick-block.col-md-12.col-xs-12.col-sm-12
+      
+        .slide-block
+          .col-md-3.col-xs-12.col-sm-12
+            .technos-bloc.img-responsive
+              = image_tag 'ruby-logo.png'
+          .desc-bloc.col-md-7.col-xs-12.col-sm-12
+            %h2
+              Ruby
+            %h3
+              Langage de programmation
+            %p
+              Ruby est un language objet de haut niveau.
 
-      .col-md-3.col-xs-12.col-sm-12.block
-        %h2.all-title
-          Ruby on Rails
-        #rails-block
-          #rails-text
-            .animate-block
-              %p
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugi
+              Sa souplesse et sa syntaxe simple et naturelle en font un language aussi performant qu'élégant.
 
-      .col-md-3.col-xs-12.col-sm-12.block
-        %h2.all-title 
-          AngularJs
-        #angular-block
-          #angular-text
-            .animate-block
-              %p
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit invulputate velit esse molestie consequat, vel illum dolore eu feugi
-      .col-md-3.col-xs-12.col-sm-12.block
-        %h2.all-title
-          PostgreSql
-        #postgre-block
-          #postgre-text
-            .animate-block
-              %p
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit invulputate velit esse molestie consequat, vel illum dolore eu feugi
+              Sa visibilité a longtemps été masqué par celle de Ruby on Rails, les développeurs apprenant Ruby par le biais du framework Ruby on Rails.
+
+              Toutefois il est de plus en plus utilisé en tant que tel, notamment pour l'administration système.           
+            = link_to 'website_adresse' do
+              %button.btn.btn-default.clearfix.pull-right
+                %span voir le site
+
+        .slide-block
+          .col-md-3.col-xs-12.col-sm-12
+            .technos-bloc.img-responsive
+              = image_tag 'Ruby_on_Rails.png'
+          .desc-bloc.col-md-7.col-xs-12.col-sm-12
+            %h2
+              Ruby on Rails
+            %h3
+              Framework web
+            %p
+              Ruby on Rails est un framework web permettant de réaliser des applications web.
+
+              Sa particularité est d'avoir été extrait d'une application originallement écrite en Ruby.
+
+              Cela lui donne une approche pragmatique et fonctionnelle que l'on ne retrouve dans aucun autre framework web.
+
+              Rails est conçu pour permettre aussi bien de prototyper rapidement une petite application que de faire évoluer celle ci vers un produit grand public, soumis à de fortes charges
+            = link_to 'website_adresse' do
+              %button.btn.btn-default.clearfix.pull-right
+                %span voir le site
+
+        .slide-block
+          .col-md-3.col-xs-12.col-sm-12
+            .technos-bloc.img-responsive
+              = image_tag 'angularjs-logo.png'
+          .desc-bloc.col-md-7.col-xs-12.col-sm-12
+            %h2
+              AngularJs
+            %h3
+              Framework JavaScript
+            %p
+              L'approche d'AngularJS, conçu par Google est différente des autres outils puisqu'elle corréle fortement la page HTML (DOM) au JavaScript.
+
+              Cette forte dépendance permet de créer des applications riches très rapidement.
+            = link_to 'website_adresse' do
+              %button.btn.btn-default.clearfix.pull-right
+                %span voir le site
+
+        .slide-block
+          .col-md-3.col-xs-12.col-sm-12
+            .technos-bloc.img-responsive
+              = image_tag 'postgre.png'
+          .desc-bloc.col-md-7.col-xs-12.col-sm-12
+            %h2
+              PostgreSql
+            %h3
+              Moteur de base de données
+            %p
+              Le système de gestion de base de données Postgresql, bien qu'incroyablement performant, a longtemps été un second choix des développeurs face à MySQL.
+
+              L'usage de ce dernier a souvent été fait par défaut, dans le cadre d'un environnement LAMP (Linux Apache Mysql PHP) ; environnement utilisé pour apprendre les bases du développement.
+
+              Le rachat de MySQL par Oracle a poussé les développeurs à s'interroger sur l'avenir de MySQL et permis l'avènement de PostgreSQL.
+            = link_to 'website_adresse' do
+              %button.btn.btn-default.clearfix.pull-right
+                %span voir le site
 #contact-us.col-md-12.col-xs-12.col-sm-12
   %h1.all-title
     Nous contacter
@@ -218,12 +270,13 @@
       .form-group
         = f.text_area :text, class: 'form-control', placeholder: 'Description '  
       .form-group
-        = f.submit 'Envoyer', class: 'btn btn-default'
+        = f.submit 'Envoyer', class: 'btn btn-default btn-lg btn-block'
+
   .col-md-5.col-xs-12.col-sm-12
     %h2
       Informations
     %p
-      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit invulputate velit esse molestie consequat, vel illum dolore eu feugi
+      Inscrivez votre Email et décrivez brievement l'objet de votre contact. Réclamer une explication sur nos services ou demander un conseil. Nous y répondrons toujours volontiers.
     %p
       %span.glyphicon.glyphicon-map-marker
       15 rue dauphin 75000 paris
